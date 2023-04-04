@@ -1,38 +1,54 @@
-.App {
+
+
+@font-face {
+    font-family: 'Yekan';
+    src:  url('./fonts/Yekan.ttf') format('ttf'),
+    url('./fonts/Yekan.eot') format('eot'),
+    url('./fonts/Yekan.woff') format('woff')
+  
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: 'Yekan'!important;
+  font-size: 18px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  a{
+    text-decoration: none!important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .shakhs{
+  
+
+    width: 580px;
+    border-radius: 15px;
+    margin: 15px auto;
+    padding: 40px 0;
   }
+
+  .inp{
+    margin-left: 20px;
+    padding: 25px 52px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    }
+
+    .dokme{
+      padding: 10px 15px;
+    border-radius: 20px;
+    }
+
+    .ashkhas{
+      margin-right: 110px;
+    }
+
+.in-shkhs{
+
+  margin-right: 3rem;
+  padding: 7px 0;
+  border-radius: 14px;
 }
