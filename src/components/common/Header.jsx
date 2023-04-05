@@ -4,18 +4,18 @@ import SimpleContext from '../../context/SimpleContext';
 
 
 
-const Header = () => {
+const Header = ({appTitle}) => {
 
     const context = useContext(SimpleContext);
 
-    const {afrad,appTitle} = context.state
+    const {persons} = context
 
 
     let badgeStyle = [];
 
-    if (afrad.length >= 3) badgeStyle = "success";
-    if (afrad.length <= 2) badgeStyle = "warning";
-    if (afrad.length <= 1) badgeStyle = "danger";
+    if (persons.length >= 3) badgeStyle = "success";
+    if (persons.length <= 2) badgeStyle = "warning";
+    if (persons.length <= 1) badgeStyle = "danger";
     return (
 /* <SimpleContext.Consumer>
     {context => ( */
@@ -27,7 +27,7 @@ const Header = () => {
                 تعداد اشخاص {" "}
                 <h2>
                     <Badge text='light' bg={badgeStyle}>
-                        {afrad.length}
+                        {persons.length}
                     </Badge>{" "}
                 </h2>
             </Alert>

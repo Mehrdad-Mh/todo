@@ -1,11 +1,16 @@
 import React from 'react';
+import { Row,Col } from 'reactstrap';
 
 
 const Person = ({ fullname, deleted, changed }) => {
    return (
-      <div style={{ cursor: "pointer" }} className='card text-white bg-info mb-3 mt-3 w-50 mx-auto'>
+      
+             
+      <div style={{ cursor: "pointer"  }} className='card text-white bg-info mb-3 mt-3  container' >
+     
+  
          <div className='card-body'>
-
+        
             <p className='d-block'>  {` ${fullname}  `}</p>
 
             <div className='input-group justify-content-center'>
@@ -15,21 +20,13 @@ const Person = ({ fullname, deleted, changed }) => {
                   <button onClick={deleted} className=' btn btn-danger btn-group-sm fa fa-trash '>حذف</button>
                </div>
             </div>
+           
          </div>
-
-
-
-
-
-
-
-
-
-
+      
 
 
       </div>
-
+  
    );
 }
 

@@ -1,14 +1,14 @@
-import React from 'react';
+import {useContext} from 'react';
 import SimpleContext from '../../context/SimpleContext';
 import {Button} from "react-bootstrap";
 
 
 
 const NewPerson = () => {
+const context = useContext(SimpleContext);
 
     return ( 
-<SimpleContext.Consumer>
-{context => (
+
 
 <div className='ashkhas'>
   
@@ -19,7 +19,7 @@ const NewPerson = () => {
      <input type='text' 
      placeholder='اضافه کردن شخص' 
      onChange={context.setPerson}
-      value={context.state.fard} 
+      value={context.person} 
       className='inp' />
  
    <Button type='submit' 
@@ -32,9 +32,7 @@ const NewPerson = () => {
  
     
     </div>
-)}
 
-</SimpleContext.Consumer>
      );
 }
  
